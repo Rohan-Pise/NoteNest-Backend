@@ -14,7 +14,7 @@ const port = process.env.PORT || 3001;
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-  origin: "https://note-nest-beige.vercel.app",
+  origin: "https://note-nest-frontend.vercel.app",
   credentials: true
 }));
 
