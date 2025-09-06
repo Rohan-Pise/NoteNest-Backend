@@ -45,8 +45,8 @@ if(!user) return res.sendStatus(403);
   res.cookie('Authorization',token,{
     expires:new Date(exp),
     httpOnly:true,
-    sameSite:'lax',
-    secure:process.env.NODE_ENV === "production",
+    sameSite:'none',
+    secure:true,
   })
   res.sendStatus(200);
 }
